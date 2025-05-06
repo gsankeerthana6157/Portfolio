@@ -1,0 +1,191 @@
+/* Reset & global */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1e1b4b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links button:hover {
+  color: #c084fc;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero-modern {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #6a0dad, #1e1b4b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e0d5ff;
+}
+
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #a855f7;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #9333ea;
+}
+
+/* Shared section base */
+.section-alt {
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Section-specific backgrounds */
+#projects.section-alt {
+  background-color: #f3e8ff;
+}
+
+#skills.section-alt {
+  background-color: #eef2ff;
+}
+
+#experience.section-alt {
+  background-color: #fef3c7;
+}
+
+#contact.section-alt {
+  background-color: #dcfce7;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #1f1f1f;
+}
+
+/* Card layout for projects */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skills badges */
+.badge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.badge {
+  background: #ede9fe;
+  color: #4c1d95;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Timeline layout */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.timeline-item h3 {
+  color: #6d28d9;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact layout */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  min-width: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card a {
+  color: #5b21b6;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
